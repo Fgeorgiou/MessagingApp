@@ -23,9 +23,9 @@ public class ChatActivity extends AppCompatActivity {
 
     String activeFriend;
 
-    ArrayList<String> messages = new ArrayList<>();
+    ArrayList<Message> messages = new ArrayList<>();
 
-    ArrayAdapter arrayAdapter;
+    MessageAdapter messageAdapter;
 
     public void sendChat(View view){
 
@@ -47,9 +47,9 @@ public class ChatActivity extends AppCompatActivity {
 
                 if(e == null){
 
-                    messages.add(messageContent);
+                    messages.add(new Message(messageContent, ParseUser.getCurrentUser().getUsername(), activeFriend));
 
-                    arrayAdapter.notifyDataSetChanged();
+                    messageAdapter.notifyDataSetChanged();
 
                 }
             }
@@ -70,9 +70,9 @@ public class ChatActivity extends AppCompatActivity {
 
         ListView chatListView = (ListView) findViewById(R.id.chatListView);
 
-        arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, messages);
+        messageAdapter = new MessageAdapter(this, messages);
 
-        chatListView.setAdapter(arrayAdapter);
+        chatListView.setAdapter(messageAdapter);
 
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -119,17 +119,14 @@ public class ChatActivity extends AppCompatActivity {
                         for(ParseObject message : objects){
 
                             String messageContent = message.getString("message");
+                            String messageSender = message.getString("sender");
+                            String messageRecipient = message.getString("recipient");
 
-                            if(!message.getString("sender").equals(ParseUser.getCurrentUser().getUsername())){
 
-                                messageContent = ">> " + messageContent;
-
-                            }
-
-                            messages.add(messageContent);
+                            messages.add(new Message(messageContent, messageSender, messageRecipient));
                         }
 
-                        arrayAdapter.notifyDataSetChanged();
+                        messageAdapter.notifyDataSetChanged();
                     }
                 }
             }
