@@ -1394,17 +1394,17 @@
                     "startLine": 75,
                     "startColumn": 4,
                     "startOffset": 8832,
-                    "endColumn": 104,
-                    "endOffset": 8932
+                    "endColumn": 105,
+                    "endOffset": 8933
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 278,
-                        "endColumn": 104,
-                        "endOffset": 378
+                        "startOffset": 55,
+                        "endColumn": 105,
+                        "endOffset": 156
                     }
                 }
             },
@@ -1412,18 +1412,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 8937,
-                    "endColumn": 109,
-                    "endOffset": 9042
+                    "startOffset": 8938,
+                    "endColumn": 94,
+                    "endOffset": 9028
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 383,
-                        "endColumn": 109,
-                        "endOffset": 488
+                        "startOffset": 161,
+                        "endColumn": 94,
+                        "endOffset": 251
                     }
                 }
             },
@@ -1431,18 +1431,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 9047,
-                    "endColumn": 109,
-                    "endOffset": 9152
+                    "startOffset": 9033,
+                    "endColumn": 85,
+                    "endOffset": 9114
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 493,
-                        "endColumn": 109,
-                        "endOffset": 598
+                        "startOffset": 256,
+                        "endColumn": 85,
+                        "endOffset": 337
                     }
                 }
             },
@@ -1450,18 +1450,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 9157,
-                    "endColumn": 104,
-                    "endOffset": 9257
+                    "startOffset": 9119,
+                    "endColumn": 101,
+                    "endOffset": 9216
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 603,
-                        "endColumn": 104,
-                        "endOffset": 703
+                        "startOffset": 342,
+                        "endColumn": 101,
+                        "endOffset": 439
                     }
                 }
             },
@@ -1469,18 +1469,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 9262,
-                    "endColumn": 131,
-                    "endOffset": 9389
+                    "startOffset": 9221,
+                    "endColumn": 95,
+                    "endOffset": 9312
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 708,
-                        "endColumn": 131,
-                        "endOffset": 835
+                        "startOffset": 444,
+                        "endColumn": 95,
+                        "endOffset": 535
                     }
                 }
             },
@@ -1488,18 +1488,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 9394,
-                    "endColumn": 97,
-                    "endOffset": 9487
+                    "startOffset": 9317,
+                    "endColumn": 92,
+                    "endOffset": 9405
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 840,
-                        "endColumn": 97,
-                        "endOffset": 933
+                        "startOffset": 540,
+                        "endColumn": 92,
+                        "endOffset": 628
                     }
                 }
             },
@@ -1507,18 +1507,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 9492,
-                    "endColumn": 100,
-                    "endOffset": 9588
+                    "startOffset": 9410,
+                    "endColumn": 88,
+                    "endOffset": 9494
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 938,
-                        "endColumn": 100,
-                        "endOffset": 1034
+                        "startOffset": 633,
+                        "endColumn": 88,
+                        "endOffset": 717
                     }
                 }
             },
@@ -1526,18 +1526,18 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 9593,
-                    "endColumn": 122,
-                    "endOffset": 9711
+                    "startOffset": 9499,
+                    "endColumn": 90,
+                    "endOffset": 9585
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1039,
-                        "endColumn": 122,
-                        "endOffset": 1157
+                        "startOffset": 722,
+                        "endColumn": 90,
+                        "endOffset": 808
                     }
                 }
             },
@@ -1545,18 +1545,18 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 9716,
-                    "endColumn": 100,
-                    "endOffset": 9812
+                    "startOffset": 9590,
+                    "endColumn": 119,
+                    "endOffset": 9705
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1162,
-                        "endColumn": 100,
-                        "endOffset": 1258
+                        "startOffset": 813,
+                        "endColumn": 119,
+                        "endOffset": 928
                     }
                 }
             },
@@ -1564,18 +1564,18 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 9817,
-                    "endColumn": 84,
-                    "endOffset": 9897
+                    "startOffset": 9710,
+                    "endColumn": 120,
+                    "endOffset": 9826
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1263,
-                        "endColumn": 84,
-                        "endOffset": 1343
+                        "startOffset": 933,
+                        "endColumn": 120,
+                        "endOffset": 1049
                     }
                 }
             },
@@ -1583,18 +1583,18 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 9902,
-                    "endColumn": 91,
-                    "endOffset": 9989
+                    "startOffset": 9831,
+                    "endColumn": 85,
+                    "endOffset": 9912
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-sw\\values-sw.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1348,
-                        "endColumn": 91,
-                        "endOffset": 1435
+                        "startOffset": 1054,
+                        "endColumn": 85,
+                        "endOffset": 1135
                     }
                 }
             },
@@ -1602,9 +1602,85 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 9994,
+                    "startOffset": 9917,
+                    "endColumn": 81,
+                    "endOffset": 9994
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1140,
+                        "endColumn": 81,
+                        "endOffset": 1217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 9999,
+                    "endColumn": 88,
+                    "endOffset": 10083
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1222,
+                        "endColumn": 88,
+                        "endOffset": 1306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 10088,
+                    "endColumn": 84,
+                    "endOffset": 10168
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1311,
+                        "endColumn": 84,
+                        "endOffset": 1391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 10173,
+                    "endColumn": 91,
+                    "endOffset": 10260
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1396,
+                        "endColumn": 91,
+                        "endOffset": 1483
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 10265,
                     "endColumn": 104,
-                    "endOffset": 10094
+                    "endOffset": 10365
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-sw\\values.xml",
@@ -1619,11 +1695,11 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 10099,
+                    "startOffset": 10370,
                     "endColumn": 95,
-                    "endOffset": 10190
+                    "endOffset": 10461
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-sw\\values.xml",
@@ -1638,11 +1714,11 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 10195,
+                    "startOffset": 10466,
                     "endColumn": 100,
-                    "endOffset": 10291
+                    "endOffset": 10562
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-sw\\values-sw.xml",
@@ -1657,11 +1733,11 @@
             },
             {
                 "to": {
-                    "startLine": 89,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 10296,
+                    "startOffset": 10567,
                     "endColumn": 116,
-                    "endOffset": 10408
+                    "endOffset": 10679
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\9.4.0\\res\\values-sw\\values.xml",

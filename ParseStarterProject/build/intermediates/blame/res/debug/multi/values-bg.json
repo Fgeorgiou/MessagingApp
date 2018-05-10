@@ -1394,17 +1394,17 @@
                     "startLine": 75,
                     "startColumn": 4,
                     "startOffset": 8949,
-                    "endColumn": 109,
-                    "endOffset": 9054
+                    "endColumn": 106,
+                    "endOffset": 9051
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 278,
-                        "endColumn": 109,
-                        "endOffset": 383
+                        "startOffset": 55,
+                        "endColumn": 106,
+                        "endOffset": 157
                     }
                 }
             },
@@ -1412,18 +1412,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 9059,
-                    "endColumn": 112,
-                    "endOffset": 9167
+                    "startOffset": 9056,
+                    "endColumn": 99,
+                    "endOffset": 9151
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 388,
-                        "endColumn": 112,
-                        "endOffset": 496
+                        "startOffset": 162,
+                        "endColumn": 99,
+                        "endOffset": 257
                     }
                 }
             },
@@ -1431,18 +1431,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 9172,
-                    "endColumn": 109,
-                    "endOffset": 9277
+                    "startOffset": 9156,
+                    "endColumn": 87,
+                    "endOffset": 9239
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 501,
-                        "endColumn": 109,
-                        "endOffset": 606
+                        "startOffset": 262,
+                        "endColumn": 87,
+                        "endOffset": 345
                     }
                 }
             },
@@ -1450,18 +1450,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 9282,
-                    "endColumn": 118,
-                    "endOffset": 9396
+                    "startOffset": 9244,
+                    "endColumn": 105,
+                    "endOffset": 9345
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 611,
-                        "endColumn": 118,
-                        "endOffset": 725
+                        "startOffset": 350,
+                        "endColumn": 105,
+                        "endOffset": 451
                     }
                 }
             },
@@ -1469,18 +1469,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 9401,
-                    "endColumn": 125,
-                    "endOffset": 9522
+                    "startOffset": 9350,
+                    "endColumn": 99,
+                    "endOffset": 9445
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 730,
-                        "endColumn": 125,
-                        "endOffset": 851
+                        "startOffset": 456,
+                        "endColumn": 99,
+                        "endOffset": 551
                     }
                 }
             },
@@ -1488,18 +1488,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 9527,
-                    "endColumn": 108,
-                    "endOffset": 9631
+                    "startOffset": 9450,
+                    "endColumn": 94,
+                    "endOffset": 9540
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 856,
-                        "endColumn": 108,
-                        "endOffset": 960
+                        "startOffset": 556,
+                        "endColumn": 94,
+                        "endOffset": 646
                     }
                 }
             },
@@ -1507,18 +1507,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 9636,
-                    "endColumn": 96,
-                    "endOffset": 9728
+                    "startOffset": 9545,
+                    "endColumn": 107,
+                    "endOffset": 9648
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 965,
-                        "endColumn": 96,
-                        "endOffset": 1057
+                        "startOffset": 651,
+                        "endColumn": 107,
+                        "endOffset": 754
                     }
                 }
             },
@@ -1526,18 +1526,18 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 9733,
-                    "endColumn": 125,
-                    "endOffset": 9854
+                    "startOffset": 9653,
+                    "endColumn": 94,
+                    "endOffset": 9743
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1062,
-                        "endColumn": 125,
-                        "endOffset": 1183
+                        "startOffset": 759,
+                        "endColumn": 94,
+                        "endOffset": 849
                     }
                 }
             },
@@ -1545,18 +1545,18 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 9859,
-                    "endColumn": 111,
-                    "endOffset": 9966
+                    "startOffset": 9748,
+                    "endColumn": 113,
+                    "endOffset": 9857
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1188,
-                        "endColumn": 111,
-                        "endOffset": 1295
+                        "startOffset": 854,
+                        "endColumn": 113,
+                        "endOffset": 963
                     }
                 }
             },
@@ -1564,18 +1564,18 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 9971,
-                    "endColumn": 86,
-                    "endOffset": 10053
+                    "startOffset": 9862,
+                    "endColumn": 113,
+                    "endOffset": 9971
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1300,
-                        "endColumn": 86,
-                        "endOffset": 1382
+                        "startOffset": 968,
+                        "endColumn": 113,
+                        "endOffset": 1077
                     }
                 }
             },
@@ -1583,18 +1583,18 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 10058,
+                    "startOffset": 9976,
                     "endColumn": 96,
-                    "endOffset": 10150
+                    "endOffset": 10068
                 },
                 "from": {
-                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-bg\\values-bg.xml",
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1387,
+                        "startOffset": 1082,
                         "endColumn": 96,
-                        "endOffset": 1479
+                        "endOffset": 1174
                     }
                 }
             },
@@ -1602,9 +1602,85 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 10155,
+                    "startOffset": 10073,
+                    "endColumn": 83,
+                    "endOffset": 10152
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1179,
+                        "endColumn": 83,
+                        "endOffset": 1258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 10157,
+                    "endColumn": 99,
+                    "endOffset": 10252
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1263,
+                        "endColumn": 99,
+                        "endOffset": 1358
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 10257,
+                    "endColumn": 86,
+                    "endOffset": 10339
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1363,
+                        "endColumn": 86,
+                        "endOffset": 1445
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 10344,
+                    "endColumn": 96,
+                    "endOffset": 10436
+                },
+                "from": {
+                    "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1450,
+                        "endColumn": 96,
+                        "endOffset": 1542
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 10441,
                     "endColumn": 113,
-                    "endOffset": 10264
+                    "endOffset": 10550
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-bg\\values.xml",
@@ -1619,11 +1695,11 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 10269,
+                    "startOffset": 10555,
                     "endColumn": 96,
-                    "endOffset": 10361
+                    "endOffset": 10647
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\values-bg\\values.xml",
@@ -1638,11 +1714,11 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 10366,
+                    "startOffset": 10652,
                     "endColumn": 100,
-                    "endOffset": 10462
+                    "endOffset": 10748
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-bg\\values-bg.xml",
@@ -1657,11 +1733,11 @@
             },
             {
                 "to": {
-                    "startLine": 89,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 10467,
+                    "startOffset": 10753,
                     "endColumn": 103,
-                    "endOffset": 10566
+                    "endOffset": 10852
                 },
                 "from": {
                     "file": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\9.4.0\\res\\values-bg\\values.xml",

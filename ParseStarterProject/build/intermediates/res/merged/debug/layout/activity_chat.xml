@@ -19,7 +19,47 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff"
+        android:background="@drawable/layout_bg"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_location_pin"
+            android:onClick="redirectActivity"
+            android:id="@+id/chatLocationButton"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_media_vector_image"
+            android:onClick="redirectActivity"
+            android:id="@+id/chatImagesButton"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_camera_vector_image"
+            android:onClick="redirectActivity"
+            android:id="@+id/chatCameraButton"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <EditText

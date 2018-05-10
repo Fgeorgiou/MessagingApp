@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -45,22 +46,44 @@ public class MessageAdapter extends BaseAdapter {
         Message message = messages.get(i);
 
         if (message.isBelongsToCurrentUser()) { // this message was sent by us so let's create a basic chat bubble on the right
+            if(message.getImage() == null) {
 
-            convertView = messageInflater.inflate(R.layout.item_message_sent, null);
+                convertView = messageInflater.inflate(R.layout.item_message_sent, null);
 
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+                holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+                holder.messageBody.setText(message.getText());
 
-            holder.messageBody.setText(message.getText());
+            }else if(message.getText() == null){
 
+                convertView = messageInflater.inflate(R.layout.item_message_sent_image, null);
+
+                holder.messageImage = (ImageView) convertView.findViewById(R.id.message_image);
+                holder.messageImage.setImageBitmap(message.getImage());
+
+            }
         } else { // this message was sent by someone else so let's create an advanced chat bubble on the left
+            if(message.getImage() == null) {
 
-            convertView = messageInflater.inflate(R.layout.item_message_received, null);
+                convertView = messageInflater.inflate(R.layout.item_message_received, null);
 
-            holder.name = (TextView) convertView.findViewById(R.id.name);
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+                holder.name = (TextView) convertView.findViewById(R.id.name);
+                holder.name.setText(message.getSender());
 
-            holder.name.setText(message.getSender());
-            holder.messageBody.setText(message.getText());
+                holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+                holder.messageBody.setText(message.getText());
+
+            }else if(message.getText() == null){
+
+                convertView = messageInflater.inflate(R.layout.item_message_received_image, null);
+
+
+                holder.name = (TextView) convertView.findViewById(R.id.name);
+                holder.name.setText(message.getSender());
+
+                holder.messageImage = (ImageView) convertView.findViewById(R.id.message_image);
+                holder.messageImage.setImageBitmap(message.getImage());
+
+            }
         }
 
         return convertView;
@@ -71,4 +94,5 @@ public class MessageAdapter extends BaseAdapter {
 class MessageViewHolder {
     public TextView name;
     public TextView messageBody;
+    public ImageView messageImage;
 }

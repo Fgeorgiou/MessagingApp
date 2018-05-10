@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Credits: http://inloop.github.io/svg2android/ -->
+<!-- Credits: https://android-material-icon-generator.bitdroid.de/ -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10"
+        android:pathData="M17.5478,29.16176h11.61397v1.29044h-11.61397c-0.71297,0 -1.29044,-0.57747 -1.29044,-1.29044l0.00645,-5.80698h-0.00645v-3.2261h1.29044zM31.74264,20.12868v6.4522c0,0.71297 -0.57747,1.29044 -1.29044,1.29044h-10.32352c-0.71297,0 -1.29044,-0.57747 -1.29044,-1.29044l0.00645,-7.74264c0,-0.71297 0.57102,-1.29044 1.28399,-1.29044h3.87132l1.29044,1.29044h5.16176c0.71297,0 1.29044,0.57747 1.29044,1.29044zM29.80698,25.93566l-2.25827,-2.90349l-1.61305,1.93889l-2.25827,-2.90672l-2.90349,3.87132z" />
+
+</vector>

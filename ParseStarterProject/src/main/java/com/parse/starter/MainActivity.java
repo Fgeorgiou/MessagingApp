@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("MessagingApp Login");
+        setTitle("ChatApp Login");
 
         redirectIfLoggedIn();
 

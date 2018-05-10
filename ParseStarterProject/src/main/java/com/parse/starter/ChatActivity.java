@@ -1,25 +1,42 @@
 package com.parse.starter;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
+import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
+import com.parse.GetDataCallback;
 import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChatActivity extends AppCompatActivity {
+
+    final int MEDIA_STORAGE_IMAGE_CODE = 1;
+    final int CAMERA_USAGE_CODE = 2;
 
     String activeFriend;
 
@@ -35,26 +52,140 @@ public class ChatActivity extends AppCompatActivity {
 
         final String messageContent = chatEditText.getText().toString();
 
-        message.put("sender", ParseUser.getCurrentUser().getUsername());
-        message.put("recipient", activeFriend);
-        message.put("message", messageContent);
+        if(!messageContent.equals("")) {
 
-        chatEditText.setText("");
+            if (messageContent.contains("https")) {
 
-        message.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
+                message.put("message", "My current location: " + messageContent.substring(messageContent.indexOf("h")));
 
-                if(e == null){
+            } else {
 
-                    messages.add(new Message(messageContent, ParseUser.getCurrentUser().getUsername(), activeFriend));
+                message.put("message", messageContent);
 
-                    messageAdapter.notifyDataSetChanged();
+            }
+
+            message.put("sender", ParseUser.getCurrentUser().getUsername());
+            message.put("recipient", activeFriend);
+
+            chatEditText.setText("");
+
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
+            message.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+
+                    if (e == null) {
+
+                        messages.add(new Message(messageContent, ParseUser.getCurrentUser().getUsername(), activeFriend));
+
+                        messageAdapter.notifyDataSetChanged();
+
+                    }
+                }
+            });
+        }
+    }
+
+    public void searchImageInStorage(){
+
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, MEDIA_STORAGE_IMAGE_CODE);
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if(requestCode == 1){
+
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+
+                searchImageInStorage();
+
+            }
+        }
+    }
+
+    public void redirectActivity(View view){
+
+        if(view.equals(findViewById(R.id.chatLocationButton))) {
+            Intent intent = new Intent(ChatActivity.this, PinpointLocationActivity.class);
+            startActivity(intent);
+        }else if(view.equals(findViewById(R.id.chatImagesButton))) {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+
+                    requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
 
                 }
             }
-        });
 
+            searchImageInStorage();
+
+        }else if(view.equals(findViewById(R.id.chatCameraButton))) {
+            Intent intent = new Intent(ChatActivity.this, PinpointLocationActivity.class);
+            startActivity(intent);
+        }
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode != RESULT_CANCELED) {
+            if (requestCode == MEDIA_STORAGE_IMAGE_CODE && resultCode == RESULT_OK && data != null) {
+
+                Uri selectedImage = data.getData();
+
+                try {
+
+                    final Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
+
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+
+                    byte[] byteArray = stream.toByteArray();
+
+                    ParseFile file = new ParseFile("image.png", byteArray);
+
+                    ParseObject message = new ParseObject("Message");
+
+                    message.put("image", file);
+                    message.put("sender", ParseUser.getCurrentUser().getUsername());
+                    message.put("recipient", activeFriend);
+
+                    message.saveInBackground(new SaveCallback() {
+                        @Override
+                        public void done(ParseException e) {
+
+                            if (e == null) {
+
+                                messages.add(new Message(bitmap, ParseUser.getCurrentUser().getUsername(), activeFriend));
+
+                                messageAdapter.notifyDataSetChanged();
+
+                            }
+                        }
+                    });
+
+                } catch (IOException e) {
+
+                    e.printStackTrace();
+
+                }
+
+            } else if (requestCode == CAMERA_USAGE_CODE && resultCode == RESULT_OK && data != null) {
+
+                //code...
+
+            }
+        }
     }
 
     @Override
@@ -81,7 +212,7 @@ public class ChatActivity extends AppCompatActivity {
 
                 getMessageLog();
 
-                handler.postDelayed(this, 2000);
+                handler.postDelayed(this, 3000);
             }
         }, 1500);
     }
@@ -118,14 +249,39 @@ public class ChatActivity extends AppCompatActivity {
 
                         for(ParseObject message : objects){
 
-                            String messageContent = message.getString("message");
-                            String messageSender = message.getString("sender");
-                            String messageRecipient = message.getString("recipient");
+                            final String messageSender;
+                            final String messageRecipient;
 
+                            messageSender = message.getString("sender");
+                            messageRecipient = message.getString("recipient");
 
-                            messages.add(new Message(messageContent, messageSender, messageRecipient));
+                            if(message.getString("image") == null) {
+
+                                String messageContentString = message.getString("message");
+
+                                messages.add(new Message(messageContentString, messageSender, messageRecipient));
+
+                            } else {
+
+                                ParseFile parseFile = (ParseFile) message.get("image");
+
+                                parseFile.getDataInBackground(new GetDataCallback() {
+                                    @Override
+                                    public void done(byte[] data, ParseException e) {
+
+                                        if(e == null && data != null){
+
+                                            Bitmap messageContentBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+
+                                            Log.i("InfoZOR", messageContentBitmap.toString());
+
+                                            messages.add(new Message(messageContentBitmap, messageSender, messageRecipient));
+
+                                        }
+                                    }
+                                });
+                            }
                         }
-
                         messageAdapter.notifyDataSetChanged();
                     }
                 }

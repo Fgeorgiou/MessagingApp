@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Credits: http://inloop.github.io/svg2android/ -->
+<!-- Credits: https://android-material-icon-generator.bitdroid.de/ -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:fillColor="#000000"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="10"
+        android:pathData="M20.87357,24.97701c0,-1.72668 1.39975,-3.12643 3.12643,-3.12643c1.72668,0 3.12643,1.39975 3.12643,3.12643c0,1.72668 -1.39975,3.12643 -3.12643,3.12643c-1.72668,0 -3.12643,-1.39975 -3.12643,-3.12643z" />
+    <path
+        android:fillColor="#000000"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="10"
+        android:pathData="M21.06897,15.2069l-1.78793,1.95402h-3.09712c-1.0796,0 -1.95402,0.87442 -1.95402,1.95402v11.72413c0,1.0796 0.87442,1.95402 1.95402,1.95402h15.63217c1.0796,0 1.95402,-0.87442 1.95402,-1.95402v-11.72413c0,-1.0796 -0.87442,-1.95402 -1.95402,-1.95402h-3.09712l-1.78793,-1.95402zM24,29.86207c-2.69655,0 -4.88505,-2.1885 -4.88505,-4.88505c0,-2.69655 2.1885,-4.88505 4.88505,-4.88505c2.69655,0 4.88505,2.1885 4.88505,4.88505c0,2.69655 -2.1885,4.88505 -4.88505,4.88505z" />
+
+</vector>

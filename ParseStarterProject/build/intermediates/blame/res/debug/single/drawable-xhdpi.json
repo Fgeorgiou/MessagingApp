@@ -4,20 +4,56 @@
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_disabled_light.png"
     },
     {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_play_dark.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_play_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_play.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_play.png"
-    },
-    {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_on_2_light.png",
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_on_2_light.png"
     },
     {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_on_light.png",
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_on_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_dark.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_setting_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_on_mono_dark.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_route_on_mono_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_location_pin.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_location_pin.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_vector_image.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_media_vector_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_light.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_setting_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_on_1_light.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_on_1_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_send_black_24dp.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_send_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_on_0_mono_dark.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_route_on_0_mono_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_off_light.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_off_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_play_dark.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_play_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_play.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_play.png"
     },
     {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_light.png",
@@ -34,14 +70,6 @@
     {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_disabled_mono_dark.png",
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_route_disabled_mono_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_dark.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_setting_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_on_mono_dark.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_route_on_mono_dark.png"
     },
     {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_on_1_mono_dark.png",
@@ -64,31 +92,15 @@
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_pause_light.png"
     },
     {
+        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_camera_vector_image.png",
+        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_camera_vector_image.png"
+    },
+    {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_pause.png",
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_pause.png"
     },
     {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_setting_light.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_setting_light.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_on_1_light.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_on_1_light.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_send_black_24dp.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_send_black_24dp.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_media_route_on_0_mono_dark.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_media_route_on_0_mono_dark.png"
-    },
-    {
         "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_dark.png",
         "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_cast_off_light.png",
-        "source": "C:\\Users\\Filippos\\Desktop\\MessagingApp\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-xhdpi\\ic_cast_off_light.png"
     }
 ]
