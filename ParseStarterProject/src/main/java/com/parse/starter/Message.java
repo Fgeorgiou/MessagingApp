@@ -27,16 +27,12 @@ public class Message {
         return text;
     }
 
-    public String getSender() {
-        return messageSender;
-    }
-
-    public String getRecipient() {
-        return messageRecipient;
-    }
-
     public Bitmap getImage() {
         return image;
+    }
+
+    public String getSender() {
+        return messageSender;
     }
 
     public boolean isBelongsToCurrentUser() {

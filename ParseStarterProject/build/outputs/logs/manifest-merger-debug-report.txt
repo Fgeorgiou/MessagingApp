@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:9:1-53:12
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:9:1-56:12
 	package
 		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:11:5-32
 		INJECTED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml
@@ -53,7 +53,7 @@ ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\A
 	android:name
 		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:16:22-76
 application
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:19:5-51:19
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:19:5-54:19
 MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services\9.4.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.4.0\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:20:5-24:19
@@ -100,52 +100,61 @@ MERGED from [com.google.android.gms:play-services-safetynet:9.4.0] C:\Users\Fili
 MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.4.0\AndroidManifest.xml:24:5-38:19
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.4.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-wearable:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.1.0\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:25:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:22:9-44
 	android:allowBackup
 		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:21:9-35
 	android:icon
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:22:9-43
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:23:9-43
+	android:largeHeap
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:24:9-33
 	android:theme
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:24:9-40
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:26:9-40
 	android:name
 		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:20:9-43
 activity#com.parse.starter.MainActivity
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:27:9-35:20
 	android:label
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:27:13-45
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:29:13-45
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:28:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:33:27-74
 activity#com.parse.starter.FriendListActivity
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:34:9-56
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:36:9-56
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:34:19-53
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:36:19-53
 activity#com.parse.starter.ChatActivity
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:35:9-50
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:37:9-50
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:35:19-47
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:37:19-47
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:44:9-46:55
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:46:9-48:55
 	android:value
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:46:13-52
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:48:13-52
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:45:13-58
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:47:13-58
 activity#com.parse.starter.PinpointLocationActivity
-ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:48:9-50:81
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:50:9-52:72
 	android:label
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:50:13-69
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:49:13-53
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:51:13-53
+activity#com.parse.starter.ImageGalleryActivity
+ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:53:9-67
+	android:name
+		ADDED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml:53:19-55
 uses-sdk
 INJECTED from C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services\9.4.0\AndroidManifest.xml:4:5-42
@@ -204,6 +213,7 @@ MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\Filippo
 MERGED from [com.google.android.gms:play-services-wallet:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.4.0\AndroidManifest.xml:19:5-42
 MERGED from [com.google.android.gms:play-services-wearable:9.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.4.0\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.1.0\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Filippos\Desktop\MessagingApp\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

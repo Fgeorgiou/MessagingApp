@@ -71,6 +71,18 @@ public class FriendListActivity extends AppCompatActivity {
             }
         });
 
+        friendListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent = new Intent(getApplicationContext(), ImageGalleryActivity.class);
+                intent.putExtra("username", users.get(i));
+                startActivity(intent);
+
+                return true;
+            }
+        });
+
         users.clear();
 
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, users);

@@ -9,10 +9,10 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:padding="10dp"
         android:layout_alignParentRight="true"
         android:background="@drawable/my_message"
-        android:id="@+id/message_image"
+        android:id="@+id/message_image_sent"
         android:src="@drawable/ic_location_pin"/>
 </RelativeLayout>

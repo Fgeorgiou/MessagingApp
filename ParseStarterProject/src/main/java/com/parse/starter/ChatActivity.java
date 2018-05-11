@@ -12,15 +12,12 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.parse.FindCallback;
-import com.parse.GetDataCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
@@ -154,22 +151,36 @@ public class ChatActivity extends AppCompatActivity {
 
                     ParseFile file = new ParseFile("image.png", byteArray);
 
-                    ParseObject message = new ParseObject("Message");
+                    ParseObject imageMessage = new ParseObject("Image");
 
-                    message.put("image", file);
-                    message.put("sender", ParseUser.getCurrentUser().getUsername());
-                    message.put("recipient", activeFriend);
+                    imageMessage.put("image", file);
+                    imageMessage.put("sender", ParseUser.getCurrentUser().getUsername());
+                    imageMessage.put("recipient", activeFriend);
 
-                    message.saveInBackground(new SaveCallback() {
+                    imageMessage.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {
 
                             if (e == null) {
 
-                                messages.add(new Message(bitmap, ParseUser.getCurrentUser().getUsername(), activeFriend));
+                                ParseObject autoResponse = new ParseObject("Message");
 
-                                messageAdapter.notifyDataSetChanged();
+                                final String autoResponseMessage = ParseUser.getCurrentUser().getUsername() + " has uploaded an image! Press and hold his/her name in your friend list to see it!";
 
+                                autoResponse.put("message", autoResponseMessage);
+                                autoResponse.put("sender", ParseUser.getCurrentUser().getUsername());
+                                autoResponse.put("recipient", activeFriend);
+
+                                autoResponse.saveInBackground(new SaveCallback() {
+                                    @Override
+                                    public void done(ParseException e) {
+
+                                        messages.add(new Message(autoResponseMessage, ParseUser.getCurrentUser().getUsername(), activeFriend));
+
+                                        messageAdapter.notifyDataSetChanged();
+
+                                    }
+                                });
                             }
                         }
                     });
@@ -249,39 +260,14 @@ public class ChatActivity extends AppCompatActivity {
 
                         for(ParseObject message : objects){
 
-                            final String messageSender;
-                            final String messageRecipient;
+                            String messageSender = message.getString("sender");
+                            String messageRecipient = message.getString("recipient");
+                            String messageContentString = message.getString("message");
 
-                            messageSender = message.getString("sender");
-                            messageRecipient = message.getString("recipient");
+                            messages.add(new Message(messageContentString, messageSender, messageRecipient));
 
-                            if(message.getString("image") == null) {
-
-                                String messageContentString = message.getString("message");
-
-                                messages.add(new Message(messageContentString, messageSender, messageRecipient));
-
-                            } else {
-
-                                ParseFile parseFile = (ParseFile) message.get("image");
-
-                                parseFile.getDataInBackground(new GetDataCallback() {
-                                    @Override
-                                    public void done(byte[] data, ParseException e) {
-
-                                        if(e == null && data != null){
-
-                                            Bitmap messageContentBitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-
-                                            Log.i("InfoZOR", messageContentBitmap.toString());
-
-                                            messages.add(new Message(messageContentBitmap, messageSender, messageRecipient));
-
-                                        }
-                                    }
-                                });
-                            }
                         }
+
                         messageAdapter.notifyDataSetChanged();
                     }
                 }
