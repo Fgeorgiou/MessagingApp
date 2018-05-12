@@ -80,7 +80,7 @@ public class ImageGalleryActivity extends AppCompatActivity {
 
                         imageMessages.clear();
 
-                        for (ParseObject object : objects) {
+                        for (final ParseObject object : objects) {
 
                             ParseFile file = (ParseFile) object.get("image");
 
@@ -90,8 +90,10 @@ public class ImageGalleryActivity extends AppCompatActivity {
                                     if(e == null && data != null){
 
                                         Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+                                        String messageSender = object.getString("sender");
+                                        String messageRecipient = object.getString("recipient");
 
-                                        imageMessages.add(new Message(bitmap, ParseUser.getCurrentUser().getUsername(), activeFriend));
+                                        imageMessages.add(new Message(bitmap, messageSender, messageRecipient));
 
                                         imageMessageAdapter.notifyDataSetChanged();
                                     }

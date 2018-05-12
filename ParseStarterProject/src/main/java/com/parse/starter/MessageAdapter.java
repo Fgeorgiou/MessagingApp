@@ -51,44 +51,42 @@ public class MessageAdapter extends BaseAdapter {
         Message message = messages.get(i);
 
 
-        if(message.getText() == null) { // if the message is an image message then inflate for image
+        if(message.getImage() != null && message.isBelongsToCurrentUser()) { // if the message is an image message then inflate for image
+            // this message was sent by us so let's create a basic chat bubble on the right
 
-            if (message.getSender().equals(ParseUser.getCurrentUser().getUsername())) { // this message was sent by us so let's create a basic chat bubble on the right
+            convertView = messageInflater.inflate(R.layout.item_message_sent_image, null);
 
-                convertView = messageInflater.inflate(R.layout.item_message_sent_image, null);
+            imageHolder.messageImage = (ImageView) convertView.findViewById(R.id.message_image_sent);
+            imageHolder.messageImage.setImageBitmap(message.getImage());
 
-                imageHolder.messageImage = (ImageView) convertView.findViewById(R.id.message_image_sent);
-                imageHolder.messageImage.setImageBitmap(message.getImage());
+        } else if (message.getImage() != null && !message.isBelongsToCurrentUser()) {
+            // this message was sent by someone else so let's create an advanced chat bubble on the left
 
-            } else { // this message was sent by someone else so let's create an advanced chat bubble on the left
+            convertView = messageInflater.inflate(R.layout.item_message_received_image, null);
 
-                convertView = messageInflater.inflate(R.layout.item_message_received_image, null);
+            imageHolder.name = (TextView) convertView.findViewById(R.id.name);
+            imageHolder.name.setText(message.getSender());
 
-                imageHolder.messageImage = (ImageView) convertView.findViewById(R.id.message_image_received);
-                imageHolder.messageImage.setImageBitmap(message.getImage());
+            imageHolder.messageImage = (ImageView) convertView.findViewById(R.id.message_image_received);
+            imageHolder.messageImage.setImageBitmap(message.getImage());
 
-            }
+        } else if (message.getText() != null && message.isBelongsToCurrentUser()){ //else inflate as a normal message
+            // this message was sent by us so let's create a basic chat bubble on the right
+            convertView = messageInflater.inflate(R.layout.item_message_sent, null);
 
-        } else if (message.getImage() == null){ //else inflate as a normal message
+            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            holder.messageBody.setText(message.getText());
 
-            if (message.getSender().equals(ParseUser.getCurrentUser().getUsername())) { // this message was sent by us so let's create a basic chat bubble on the right
+        } else if (message.getText() != null && !message.isBelongsToCurrentUser()) {
+            // this message was sent by someone else so let's create an advanced chat bubble on the left
+            convertView = messageInflater.inflate(R.layout.item_message_received, null);
 
-                convertView = messageInflater.inflate(R.layout.item_message_sent, null);
+            holder.name = (TextView) convertView.findViewById(R.id.name);
+            holder.name.setText(message.getSender());
 
-                holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
-                holder.messageBody.setText(message.getText());
+            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            holder.messageBody.setText(message.getText());
 
-            } else { // this message was sent by someone else so let's create an advanced chat bubble on the left
-
-                convertView = messageInflater.inflate(R.layout.item_message_received, null);
-
-                holder.name = (TextView) convertView.findViewById(R.id.name);
-                holder.name.setText(message.getSender());
-
-                holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
-                holder.messageBody.setText(message.getText());
-
-            }
         }
 
         return convertView;

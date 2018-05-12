@@ -18,9 +18,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -46,15 +46,20 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.parse.starter.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.parse.starter.FriendListActivity" />
-        <activity android:name="com.parse.starter.ChatActivity" />
+        <activity
+            android:name="com.parse.starter.FriendListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.parse.starter.ChatActivity"
+            android:screenOrientation="portrait" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -69,8 +74,12 @@
 
         <activity
             android:name="com.parse.starter.PinpointLocationActivity"
-            android:label="@string/title_activity_pinpoint_location" />
-        <activity android:name="com.parse.starter.ImageGalleryActivity" />
+            android:label="@string/title_activity_pinpoint_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.parse.starter.ImageGalleryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

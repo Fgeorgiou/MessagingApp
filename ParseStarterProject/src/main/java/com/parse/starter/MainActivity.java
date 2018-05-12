@@ -11,8 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void signupLogin(View view){
+    public void signUpLogin(View view){
 
         EditText usernameEditText = (EditText) findViewById(R.id.usernameEditText);
         EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
@@ -129,6 +132,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setTitle("ChatApp Login");
+
+        RelativeLayout backgroundRelativeLayout = (RelativeLayout) findViewById(R.id.backgroundRelativeLayout);
+        ImageView mainActivityLogoImageView = (ImageView) findViewById(R.id.mainActivityLogoImageView);
+
+        backgroundRelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            }
+        });
+
+        mainActivityLogoImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            }
+        });
 
         redirectIfLoggedIn();
 

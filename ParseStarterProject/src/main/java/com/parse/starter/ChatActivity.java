@@ -7,14 +7,17 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.parse.FindCallback;
@@ -26,20 +29,26 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ChatActivity extends AppCompatActivity {
 
-    final int MEDIA_STORAGE_IMAGE_CODE = 1;
-    final int CAMERA_USAGE_CODE = 2;
+    static final int MEDIA_STORAGE_IMAGE_CODE = 1;
+    static final int CAMERA_USAGE_CODE = 2;
 
     String activeFriend;
 
     ArrayList<Message> messages = new ArrayList<>();
-
     MessageAdapter messageAdapter;
+
+    //camera utility variables
+    private Bitmap cameraImageBitmap;
+    private String mCurrentPhotoPath;
 
     public void sendChat(View view){
 
@@ -92,15 +101,44 @@ public class ChatActivity extends AppCompatActivity {
 
     }
 
+    public void startCameraActivity(){
+
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (cameraIntent.resolveActivity(getPackageManager()) != null) {
+            // Create the File where the photo should go
+            File photoFile = null;
+            try {
+                photoFile = createImageFile();
+            } catch (IOException ex) {
+                // Error occurred while creating the File
+                Log.i("Error", "IOException");
+            }
+            // Continue only if the File was successfully created
+            if (photoFile != null) {
+                cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
+                startActivityForResult(cameraIntent, CAMERA_USAGE_CODE);
+            }
+        }
+
+    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        if(requestCode == 1){
+        if(requestCode == MEDIA_STORAGE_IMAGE_CODE){
 
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
 
                 searchImageInStorage();
+
+            }
+
+        } else if (requestCode ==  CAMERA_USAGE_CODE){
+
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+
+                startCameraActivity();
 
             }
         }
@@ -116,7 +154,7 @@ public class ChatActivity extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if(checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
 
-                    requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+                    requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MEDIA_STORAGE_IMAGE_CODE);
 
                 }
             }
@@ -124,8 +162,17 @@ public class ChatActivity extends AppCompatActivity {
             searchImageInStorage();
 
         }else if(view.equals(findViewById(R.id.chatCameraButton))) {
-            Intent intent = new Intent(ChatActivity.this, PinpointLocationActivity.class);
-            startActivity(intent);
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if(checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+
+                    requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, CAMERA_USAGE_CODE);
+
+                }
+            }
+
+            startCameraActivity();
+
         }
 
     }
@@ -193,10 +240,80 @@ public class ChatActivity extends AppCompatActivity {
 
             } else if (requestCode == CAMERA_USAGE_CODE && resultCode == RESULT_OK && data != null) {
 
-                //code...
+                if (requestCode == CAMERA_USAGE_CODE && resultCode == RESULT_OK) {
+                    try {
+
+                        cameraImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse(mCurrentPhotoPath));
+
+                        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+
+                        cameraImageBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+
+                        byte[] byteArray = stream.toByteArray();
+
+                        ParseFile file = new ParseFile("image.png", byteArray);
+
+                        ParseObject imageMessage = new ParseObject("Image");
+
+                        imageMessage.put("image", file);
+                        imageMessage.put("sender", ParseUser.getCurrentUser().getUsername());
+                        imageMessage.put("recipient", activeFriend);
+
+                        imageMessage.saveInBackground(new SaveCallback() {
+                            @Override
+                            public void done(ParseException e) {
+
+                                if (e == null) {
+
+                                    ParseObject autoResponse = new ParseObject("Message");
+
+                                    final String autoResponseMessage = ParseUser.getCurrentUser().getUsername() + " has uploaded a photo! Press and hold his/her name in your friend list to see it!";
+
+                                    autoResponse.put("message", autoResponseMessage);
+                                    autoResponse.put("sender", ParseUser.getCurrentUser().getUsername());
+                                    autoResponse.put("recipient", activeFriend);
+
+                                    autoResponse.saveInBackground(new SaveCallback() {
+                                        @Override
+                                        public void done(ParseException e) {
+
+                                            messages.add(new Message(autoResponseMessage, ParseUser.getCurrentUser().getUsername(), activeFriend));
+
+                                            messageAdapter.notifyDataSetChanged();
+
+                                        }
+                                    });
+                                }
+                            }
+                        });
+
+                    } catch (IOException e) {
+
+                        e.printStackTrace();
+
+                    }
+                }
 
             }
         }
+    }
+
+    //helper function to create the image file taken from camera, credits: https://stackoverflow.com/users/4034572/albert-vila-calvo
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(
+                imageFileName,  // prefix
+                ".jpg",         // suffix
+                storageDir      // directory
+        );
+
+        // Save a file: path for use with ACTION_VIEW intents
+        mCurrentPhotoPath = "file:" + image.getAbsolutePath();
+        return image;
     }
 
     @Override
@@ -221,7 +338,9 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                getMessageLog();
+                if (ParseUser.getCurrentUser() != null) {
+                    getMessageLog();
+                }
 
                 handler.postDelayed(this, 3000);
             }
