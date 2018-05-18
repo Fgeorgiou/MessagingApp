@@ -108,15 +108,21 @@ public class ChatActivity extends AppCompatActivity {
             // Create the File where the photo should go
             File photoFile = null;
             try {
+
                 photoFile = createImageFile();
+
             } catch (IOException ex) {
+
                 // Error occurred while creating the File
                 Log.i("Error", "IOException");
+
             }
             // Continue only if the File was successfully created
             if (photoFile != null) {
+
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
                 startActivityForResult(cameraIntent, CAMERA_USAGE_CODE);
+
             }
         }
 
@@ -240,60 +246,57 @@ public class ChatActivity extends AppCompatActivity {
 
             } else if (requestCode == CAMERA_USAGE_CODE && resultCode == RESULT_OK && data != null) {
 
-                if (requestCode == CAMERA_USAGE_CODE && resultCode == RESULT_OK) {
-                    try {
+                try {
 
-                        cameraImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse(mCurrentPhotoPath));
+                    cameraImageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse(mCurrentPhotoPath));
 
-                        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
 
-                        cameraImageBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                    cameraImageBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
 
-                        byte[] byteArray = stream.toByteArray();
+                    byte[] byteArray = stream.toByteArray();
 
-                        ParseFile file = new ParseFile("image.png", byteArray);
+                    ParseFile file = new ParseFile("image.png", byteArray);
 
-                        ParseObject imageMessage = new ParseObject("Image");
+                    ParseObject imageMessage = new ParseObject("Image");
 
-                        imageMessage.put("image", file);
-                        imageMessage.put("sender", ParseUser.getCurrentUser().getUsername());
-                        imageMessage.put("recipient", activeFriend);
+                    imageMessage.put("image", file);
+                    imageMessage.put("sender", ParseUser.getCurrentUser().getUsername());
+                    imageMessage.put("recipient", activeFriend);
 
-                        imageMessage.saveInBackground(new SaveCallback() {
-                            @Override
-                            public void done(ParseException e) {
+                    imageMessage.saveInBackground(new SaveCallback() {
+                        @Override
+                        public void done(ParseException e) {
 
-                                if (e == null) {
+                            if (e == null) {
 
-                                    ParseObject autoResponse = new ParseObject("Message");
+                                ParseObject autoResponse = new ParseObject("Message");
 
-                                    final String autoResponseMessage = ParseUser.getCurrentUser().getUsername() + " has uploaded a photo! Press and hold his/her name in your friend list to see it!";
+                                final String autoResponseMessage = ParseUser.getCurrentUser().getUsername() + " has uploaded a photo! Press and hold his/her name in your friend list to see it!";
 
-                                    autoResponse.put("message", autoResponseMessage);
-                                    autoResponse.put("sender", ParseUser.getCurrentUser().getUsername());
-                                    autoResponse.put("recipient", activeFriend);
+                                autoResponse.put("message", autoResponseMessage);
+                                autoResponse.put("sender", ParseUser.getCurrentUser().getUsername());
+                                autoResponse.put("recipient", activeFriend);
 
-                                    autoResponse.saveInBackground(new SaveCallback() {
-                                        @Override
-                                        public void done(ParseException e) {
+                                autoResponse.saveInBackground(new SaveCallback() {
+                                    @Override
+                                    public void done(ParseException e) {
 
-                                            messages.add(new Message(autoResponseMessage, ParseUser.getCurrentUser().getUsername(), activeFriend));
+                                        messages.add(new Message(autoResponseMessage, ParseUser.getCurrentUser().getUsername(), activeFriend));
 
-                                            messageAdapter.notifyDataSetChanged();
+                                        messageAdapter.notifyDataSetChanged();
 
-                                        }
-                                    });
-                                }
+                                    }
+                                });
                             }
-                        });
+                        }
+                    });
 
-                    } catch (IOException e) {
+                } catch (IOException e) {
 
-                        e.printStackTrace();
+                    e.printStackTrace();
 
-                    }
                 }
-
             }
         }
     }

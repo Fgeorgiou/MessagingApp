@@ -28,7 +28,7 @@ import com.parse.SignUpCallback;
 
 public class MainActivity extends AppCompatActivity {
 
-    Boolean loginModeActive = false;
+    Boolean loginModeActive = true;
 
     public void redirectIfLoggedIn(){
 
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("ChatApp Login");
+        setTitle("MessagingApp Login");
 
         RelativeLayout backgroundRelativeLayout = (RelativeLayout) findViewById(R.id.backgroundRelativeLayout);
         ImageView mainActivityLogoImageView = (ImageView) findViewById(R.id.mainActivityLogoImageView);
